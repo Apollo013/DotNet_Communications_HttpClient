@@ -1,6 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Owin;
 using System.Web.Http;
 
@@ -13,8 +11,7 @@ namespace WebApiExample.Server
         public void Configuration(IAppBuilder app)
         {
             HttpConfiguration config = new HttpConfiguration();
-
-
+            WebApiConfig.Register(config);
             app.UseWebApi(config);
         }
     }
