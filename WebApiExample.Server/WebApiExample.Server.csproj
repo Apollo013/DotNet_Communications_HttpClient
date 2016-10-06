@@ -124,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="PersistenceLayer\AbstractRepository.cs" />
     <Compile Include="DataAccessLayer\DataContext.cs" />
     <Compile Include="DataAccessLayer\Migrations\201610060000268_InitialCreate.cs" />
     <Compile Include="DataAccessLayer\Migrations\201610060000268_InitialCreate.Designer.cs">
@@ -131,6 +134,8 @@
     </Compile>
     <Compile Include="DataAccessLayer\Migrations\Configuration.cs" />
     <Compile Include="DataAccessLayer\ProductConfiguration.cs" />
+    <Compile Include="PersistenceLayer\IRepository.cs" />
+    <Compile Include="PersistenceLayer\ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
