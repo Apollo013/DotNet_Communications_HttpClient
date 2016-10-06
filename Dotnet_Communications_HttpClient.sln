@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiExample.Server", "Web
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiExample.Entities", "WebApiExample.Entities\WebApiExample.Entities.csproj", "{1F239C87-B982-4F9D-B2B7-10606FFB9929}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F10ABDE6-80DA-4FC4-AE39-19EF9314866B}"
+	ProjectSection(SolutionItems) = preProject
+		MISC.txt = MISC.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

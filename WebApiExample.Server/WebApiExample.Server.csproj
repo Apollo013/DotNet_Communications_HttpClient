@@ -124,6 +124,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="DataAccessLayer\DataContext.cs" />
+    <Compile Include="DataAccessLayer\Migrations\201610060000268_InitialCreate.cs" />
+    <Compile Include="DataAccessLayer\Migrations\201610060000268_InitialCreate.Designer.cs">
+      <DependentUpon>201610060000268_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\Migrations\Configuration.cs" />
+    <Compile Include="DataAccessLayer\ProductConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -135,6 +142,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataAccessLayer\Migrations\201610060000268_InitialCreate.resx">
+      <DependentUpon>201610060000268_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

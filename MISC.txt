@@ -1,0 +1,7 @@
+/*------------------------------------------------------------------------------------------------------------------
+Migrations
+------------------------------------------------------------------------------------------------------------------*/
+enable-migrations -ContextTypeName:WebApiExample.Server.DataAccessLayer.DataContext -MigrationsDirectory:DataAccessLayer\Migrations
+add-migration -configuration WebApiExample.Server.DataAccessLayer.Migrations.Configuration InitialCreate
+update-database -configuration WebApiExample.Server.DataAccessLayer.Migrations.Configuration
+
