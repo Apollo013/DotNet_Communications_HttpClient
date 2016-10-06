@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 using WebApiExample.Server.DataAccessLayer;
 
 namespace WebApiExample.Server.PersistenceLayer
@@ -32,6 +34,11 @@ namespace WebApiExample.Server.PersistenceLayer
         public virtual TEntity GetById(object id)
         {
             return _dbset.Find(id);
+        }
+
+        public virtual IEnumerable<TEntity> GetAll()
+        {
+            return _dbset.ToList();
         }
         #endregion
 

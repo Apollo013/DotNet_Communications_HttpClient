@@ -8,6 +8,13 @@ namespace WebApiExample.Server.Controllers
     public class ProductController : BaseController
     {
         [HttpGet]
+        [Route("")]
+        public IHttpActionResult Get()
+        {
+            return Ok(DB.GetAll());
+        }
+
+        [HttpGet]
         [Route("{id:int}")]
         public IHttpActionResult Get(int id)
         {
@@ -66,6 +73,7 @@ namespace WebApiExample.Server.Controllers
                 return BadRequest("product.id does not match id parameter");
             }
 
+            // Get the currently existing product
             var prod = DB.GetById(id);
 
             if (prod == null)
@@ -75,7 +83,11 @@ namespace WebApiExample.Server.Controllers
 
             try
             {
-                DB.Update(product);
+                prod.Name = product.Name;
+                prod.Category = product.Category;
+                prod.Price = product.Price;
+
+                DB.Update(prod);
                 DB.Save();
             }
             catch (Exception ex)
