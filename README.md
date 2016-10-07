@@ -1,5 +1,7 @@
 # Dotnet_Communications_HttpClient
+
 A couple of examples on how to use HttpClient for reading web pages and communicating with a Web Api App.
+
 ---
 
 Developed with Visual Studio 2015 Community
