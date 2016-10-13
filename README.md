@@ -29,6 +29,8 @@ This is a simple console app that uses 'HttpClient' reads the 'BBC' home page an
 
 A Web Api 2 / Console solution that demonstrates how to make calls to a RESTful Web Api app to perfrom CRUD operations.
 
+Make sure you run the WebApi.Server first prior to running the WebApi.Client.
+
 ####Features
 |Feature|
 |-------|
